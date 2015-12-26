@@ -15,3 +15,14 @@ int solution (vector <int> &A)
   
   return *prev(it); // return previous iterator (as it was increased within while condition)
 }
+
+// xor based solution
+
+int solution (vector <int> &A)
+{
+    int x = 0; // we will xor to it all numbers
+
+    for (auto &a : A) x = x xor a; // A xor A = 0; A xor 0 = A; A xor B xor A = B
+
+    return x;
+}
