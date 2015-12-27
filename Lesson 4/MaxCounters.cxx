@@ -1,4 +1,4 @@
-vector<int> solution(int N, vector<int> &A)
+vector<int> solution(int N, vector <int> &A)
 {
     vector <int> counters (N, 0); // vector of counters
     

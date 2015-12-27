@@ -1,6 +1,6 @@
 #include <cfloat> // for DBL_MAX
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
     // there must be a 2- or 3-length slice which holds the minimum average
     // if the slice length is even -> it can be split into 2-length slices

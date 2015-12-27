@@ -1,6 +1,6 @@
 #include <numeric> // for accumulate
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {    
     // init values assume P = 1
     int  left = A[0];

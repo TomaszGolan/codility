@@ -1,4 +1,4 @@
-int solution (int X, vector<int> &A)
+int solution (int X, vector <int> &A)
 {
     vector <bool> flag (X, false); // true for already counted leaves
 

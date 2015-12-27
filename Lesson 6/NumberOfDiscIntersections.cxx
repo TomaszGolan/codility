@@ -1,4 +1,4 @@
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
     vector <int> nCirclesBorn (A.size(), 0); // number of circles which are born at point i
     vector <int> nCirclesDied (A.size(), 0); // number of circles which die at point i

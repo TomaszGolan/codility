@@ -1,6 +1,6 @@
 #include <stack>
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
   stack <int> remains; // numbers which were not removed
   

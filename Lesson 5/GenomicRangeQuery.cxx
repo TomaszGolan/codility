@@ -1,4 +1,4 @@
-vector<int> solution (string &S, vector<int> &P, vector<int> &Q)
+vector<int> solution (string &S, vector <int> &P, vector <int> &Q)
 {
     vector <int> answer (P.size(), 0); // init result vector with M elements
     

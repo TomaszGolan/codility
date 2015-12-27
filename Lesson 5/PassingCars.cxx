@@ -1,4 +1,4 @@
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
     int nEast = 0; // current number of cars travelling east (0)
     int nPass = 0; // number of passing cars

@@ -1,6 +1,6 @@
 #include <algorithm> // for sort
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
     sort (A.begin(), A.end()); // sort array
     

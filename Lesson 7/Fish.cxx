@@ -1,6 +1,6 @@
 #include <stack>
 
-int solution (vector<int> &A, vector<int> &B)
+int solution (vector <int> &A, vector <int> &B)
 {
   stack <int> alive; // alive fishes indices 
     

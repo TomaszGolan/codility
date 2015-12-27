@@ -1,6 +1,6 @@
 #include <set> // for set
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {        
     set <int> setA; // sorted, distinct elements
     

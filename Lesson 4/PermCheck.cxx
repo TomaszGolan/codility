@@ -1,6 +1,6 @@
 #include <algorithm> // for find
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
     vector <int> occurrence (A.size(), 0); // how many times numbers occur
     

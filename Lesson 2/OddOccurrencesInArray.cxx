@@ -4,7 +4,7 @@ int solution (vector <int> &A)
 {
   sort (A.begin(), A.end()); // sort array
   
-  vector<int>::iterator it = A.begin(); // set iterator at the beginning of array
+  vector <int> :: iterator it = A.begin(); // set iterator at the beginning of array
   
   int n = 0; // counter
   

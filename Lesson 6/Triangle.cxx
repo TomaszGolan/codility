@@ -1,6 +1,6 @@
 #include <algorithm> // for sort
 
-int solution (vector<int> &A)
+int solution (vector <int> &A)
 {
     if (A.size() < 3) return false; // need at least 3 elements to build a triangle
     
