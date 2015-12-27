@@ -32,3 +32,23 @@ int solution (vector <int> &A)
   
   return maxSlice;
 }
+
+// the implementation based on: http://rafal.io/posts/codility-max-double-slice-sum.html
+
+int solution (vector <int> &A)
+{
+  vector <int> maxEndAt   (A.size(), 0); // maximum slice which starts at given index
+  vector <int> maxStartAt (A.size(), 0); // maximum slice which ends at given index
+
+  // fill vectors of max slices
+  for (unsigned int i = 1; i < A.size() - 1; i++)   maxEndAt[i] = max (0, maxEndAt[i-1] + A[i]);
+  for (unsigned int i = A.size() - 2; i > 0; i--) maxStartAt[i] = max (0, maxStartAt[i+1] + A[i]);
+
+  int maxSlice = 0; // max double slice
+
+  // loop over possible P and merge max slices - the one ends at P-1 and the other which starts at P+1
+  // to get max double slice for given P; update maxSlice if necessary
+  for (unsigned int i = 1; i < A.size() - 1; i++) maxSlice = max (maxSlice, maxEndAt[i-1] + maxStartAt[i+1]);
+
+  return maxSlice;
+}
